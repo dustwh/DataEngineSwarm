@@ -18,12 +18,12 @@ CREATE TABLE `dept` (
 PRIMARY KEY (`dept_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
-INSERT INTO `dept` VALUES ('1', '开发部', 'bianchengbang_jdbc');
-INSERT INTO `dept` VALUES ('2', '人事部', 'bianchengbang_jdbc');
-INSERT INTO `dept` VALUES ('3', '财务部', 'bianchengbang_jdbc');
-INSERT INTO `dept` VALUES ('4', '市场部', 'bianchengbang_jdbc');
-INSERT INTO `dept` VALUES ('5', '运维部', 'bianchengbang_jdbc');
+INSERT INTO `dept` (`dept_no`, `dept_name`, `db_source`) VALUES
+(1, 'dev dept', 'bianchengbang_jdbc'),
+(2, 'hr dept', 'bianchengbang_jdbc'),
+(3, 'finance dept', 'bianchengbang_jdbc'),
+(4, 'marketing dept', 'bianchengbang_jdbc'),
+(5, 'admin dept', 'bianchengbang_jdbc');
 
 And then
 start service "micro-service-cloud-eureka-7001" by running the SpringBoot Application
