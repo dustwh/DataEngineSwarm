@@ -25,7 +25,7 @@ public class DeptController {
 
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
     public List<Dept> list() {
-        System.out.println("8001");
+        System.out.println("8002");
         return deptService.selectAll();
     }
 }
