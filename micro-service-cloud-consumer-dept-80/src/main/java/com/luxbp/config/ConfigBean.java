@@ -17,8 +17,9 @@ public class ConfigBean {
         return new RestTemplate();
     }
 
-    @Bean
-    public IRule myRule() {
-        return new RandomRule();
-    }
+////    This is to change the LB policy from polling to Random. To use customize LB policy, please comment this method.
+//    @Bean
+//    public IRule myRule() {
+//        return new RandomRule();
+//    }
 }
