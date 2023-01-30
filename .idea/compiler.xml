@@ -12,12 +12,12 @@
         <module name="micro-service-cloud-eureka-7002" />
         <module name="micro-service-cloud-provider-dept-8002" />
         <module name="micro-service-cloud-provider-dept-8003" />
-        <module name="micro-service-cloud-consumer-dept-80" />
         <module name="micro-service-cloud-consumer-dept-feign" />
         <module name="micro-service-cloud-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="micro-service-cloud-consumer-dept-80" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8001 (1)" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8001 (2)" target="1.8" />
     </bytecodeTargetLevel>
