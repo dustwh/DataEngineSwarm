@@ -13,6 +13,7 @@
         <module name="micro-service-cloud-provider-dept-8002" />
         <module name="micro-service-cloud-provider-dept-8003" />
         <module name="micro-service-cloud-consumer-dept-80" />
+        <module name="micro-service-cloud-consumer-dept-feign" />
         <module name="micro-service-cloud-api" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micro-service-cloud-api" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-80" options="-parameters" />
+      <module name="micro-service-cloud-consumer-dept-feign" options="-parameters" />
       <module name="micro-service-cloud-eureka-7001" options="-parameters" />
       <module name="micro-service-cloud-eureka-7002" options="-parameters" />
       <module name="micro-service-cloud-eureka-7003" options="-parameters" />
