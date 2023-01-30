@@ -12,7 +12,7 @@
         <module>micro-service-cloud-provider-dept-8001</module>
         <module>micro-service-cloud-provider-dept-8002</module>
         <module>micro-service-cloud-provider-dept-8003</module>
-        <module>micro-service-cloud-consumer-dept-80</module>
+<!--        <module>micro-service-cloud-consumer-dept-80</module>-->
         <module>micro-service-cloud-consumer-dept-feign</module>
     </modules>
 
