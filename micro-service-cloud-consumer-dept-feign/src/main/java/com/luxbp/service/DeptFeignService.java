@@ -17,5 +17,8 @@ public interface DeptFeignService {
     public Dept get(@PathVariable("id") int id);
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
     public List<Dept> list();
+
+    @RequestMapping(value = "/dept/feign/timeout")
+    public String DeptFeignTimeout();
 }
 
