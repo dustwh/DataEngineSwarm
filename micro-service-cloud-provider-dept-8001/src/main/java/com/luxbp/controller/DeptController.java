@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 /**
  * Service Provider Control Layer / 服务提供者的控制层
  * author:
@@ -27,5 +29,17 @@ public class DeptController {
     public List<Dept> list() {
         System.out.println("8001");
         return deptService.selectAll();
+    }
+
+    //timeout test, response time = 5s
+    @RequestMapping(value = "/dept/feign/timeout")
+    public String DeptFeignTimeout() {
+        //暂停 5 秒
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }
