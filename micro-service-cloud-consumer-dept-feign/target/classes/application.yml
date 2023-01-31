@@ -9,3 +9,7 @@ eureka:
 ribbon:
   ReadTimeout: 6000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
   ConnectionTimeout: 6000 #建立连接后，服务器读取到可用资源的时间
+logging:
+  level:
+    #feign 日志以什么样的级别监控该接口
+    com.luxbp.service.DeptFeignService: debug
