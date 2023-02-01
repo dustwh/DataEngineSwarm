@@ -22,5 +22,5 @@ management:
 info:
   app.name: micro-service-cloud-provider-dept-hystrix
   company.name: luxbp.com
-  build.aetifactId: @project.artifactId@
-  build.version: @project.version@
+  build.aetifactId: micro-service-cloud-provider-dept-hystrix-8004
+  build.version: 0.0.1-SNAPSHOT
