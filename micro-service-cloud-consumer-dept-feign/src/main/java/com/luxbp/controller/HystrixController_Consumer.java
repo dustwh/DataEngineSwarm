@@ -20,7 +20,7 @@ public class HystrixController_Consumer {
     }
     //在客户端进行降级
     @RequestMapping(value = "/consumer/dept/hystrix/timeout/{id}")
-//    @HystrixCommand(fallbackMethod = "dept_TimeoutHandler") //为该请求指定专属的回退方法
+//    @HystrixCommand(fallbackMethod = "dept_TimeoutHandler") //designate its own fallback method
     @HystrixCommand //use default fallback
     public String deptInfo_Timeout(@PathVariable("id") Integer id) {
         String s = deptHystrixService.deptInfo_Timeout(id);
