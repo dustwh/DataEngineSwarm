@@ -25,4 +25,12 @@ public class DeptController {
         log.info("port：" + serverPort + " result:" + result);
         return result + "，   port：" + serverPort;
     }
+
+    // Hystrix 服务熔断
+    @RequestMapping(value = "/dept/hystrix/circuit/{id}")
+    public String deptCircuitBreaker(@PathVariable("id") Integer id){
+        String result = deptService.deptCircuitBreaker(id);
+        log.info("result:"+result);
+        return result;
+    }
 }

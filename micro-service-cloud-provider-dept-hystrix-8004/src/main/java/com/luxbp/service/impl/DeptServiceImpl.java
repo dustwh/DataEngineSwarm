@@ -32,4 +32,28 @@ public class DeptServiceImpl implements DeptService {
     public String dept_TimeoutHandler(Integer id) {
         return  "write some error here, like system busy or sth else！"+"thread：" + Thread.currentThread().getName() + "  deptInfo_Timeout,id:   " + id;
     }
+
+    //Hystrix 熔断案例
+    @Override
+    @HystrixCommand(fallbackMethod = "deptCircuitBreaker_fallback", commandProperties = {
+            //以下参数在 HystrixCommandProperties 类中有默认配置
+            @HystrixProperty(name = "circuitBreaker.enabled", value = "true"), //是否开启熔断器
+            @HystrixProperty(name = "metrics.rollingStats.timeInMilliseconds",value = "1000"), //统计时间窗
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"), //统计时间窗内请求次数
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), //休眠时间窗口期
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"), //在统计时间窗口期以内，请求失败率达到 60% 时进入熔断状态
+    })
+    public String deptCircuitBreaker(Integer id) {
+        if (id < 0) {
+            //当传入的 id 为负数时，抛出异常，调用降级方法
+            throw new RuntimeException("id can not < 0！");
+        }
+//        String serialNum = IdUtil.simpleUUID();
+        return Thread.currentThread().getName() + "\t" + "succeed，id：" + "1";
+    }
+    //deptCircuitBreaker 的降级方法
+    public String deptCircuitBreaker_fallback(Integer id) {
+        return "id can not be negative,re-try\t id:" + id;
+    }
+
 }
