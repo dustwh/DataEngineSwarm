@@ -64,3 +64,8 @@ http://eureka7001.com:7001/
 http://eureka7002.com:7002/
 http://eureka7003.com:7003/
 to check the status of each discover server respectively.
+
+
+
+
+# gateway
