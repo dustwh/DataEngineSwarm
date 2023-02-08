@@ -11,6 +11,16 @@
         <module name="micro-service-cloud-provider-dept-8001" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-service-cloud-consumer-dept-feign" target="1.8" />
+      <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" target="1.8" />
+      <module name="micro-service-cloud-eureka-7002" target="1.8" />
+      <module name="micro-service-cloud-eureka-7003" target="1.8" />
+      <module name="micro-service-cloud-gateway-9527" target="1.8" />
+      <module name="micro-service-cloud-provider-dept-8002" target="1.8" />
+      <module name="micro-service-cloud-provider-dept-8003" target="1.8" />
+      <module name="micro-service-cloud-provider-dept-hystrix-8004" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

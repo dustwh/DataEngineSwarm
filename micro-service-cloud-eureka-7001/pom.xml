@@ -25,12 +25,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--import the dependency of Eureka Server for the service registry / 为服务注册中心引入 Eureka Server 的依赖-->
+        <!--import the dependency of Eureka Server for the service registry-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
-        <!--Both devtools and lombok are development auxiliary modules, which should be selected according to the needs / devtools 和 lombok 均为开发辅助模块，根据需求适当选择-->
+        <!--Both devtools and lombok are development auxiliary modules, which should be selected according to the needs-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

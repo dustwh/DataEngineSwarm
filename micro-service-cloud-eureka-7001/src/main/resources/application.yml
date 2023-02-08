@@ -1,10 +1,10 @@
 server:
-  port: 7001  #The port number of the Module / 该 Module 的端口号
+  port: 7001  #The port number of the Module
 eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false #false means do not register itself with the registry. / false表示不向注册中心注册自己。
+    register-with-eureka: false #false means do not register itself with the registry.
     fetch-registry: false #False means that my end is the registration center, and my responsibility is to maintain the service instance, and there is no need to retrieve the service / false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #Stand-alone service registration center / 单机版服务注册中心
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #Stand-alone service registration center
