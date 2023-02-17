@@ -15,6 +15,7 @@
         <module name="micro-service-cloud-provider-dept-8002" />
         <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" />
         <module name="micro-service-cloud-provider-dept-8003" />
+        <module name="micro-service-cloud-config-center-3344" />
         <module name="micro-service-cloud-consumer-dept-feign" />
         <module name="micro-service-cloud-api" />
       </profile>
@@ -28,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micro-service-cloud-api" options="-parameters" />
+      <module name="micro-service-cloud-config-center-3344" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-80" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-feign" options="-parameters" />
       <module name="micro-service-cloud-consumer-dept-hystrix-dashboard-9002" options="-parameters" />
