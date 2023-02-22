@@ -11,6 +11,11 @@ spring:
       profile: dev  #environment name, 'dev'  'config-dev.yml'
       #don't forget to add http here. Otherwise it won't load.
       uri: http://localhost:3344 #address of Spring Cloud Config server end
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
