@@ -1,9 +1,9 @@
 #bootstrap.yml is at system level，loading order is prior to application.yml   Responsible for loading configuration from outside and parsing
 server:
-  port: 3355
+  port: 3366  #port num 3366
 spring:
   application:
-    name: spring-cloud-config-client
+    name: spring-cloud-config-client-bus
   cloud:
     config:
       label: main #branch name

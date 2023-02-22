@@ -6,11 +6,12 @@ spring:
     name: spring-cloud-config-client
   cloud:
     config:
-      label: main
+      label: main #branch name
       name: config  #name of the config file, the 'config' in 'config-dev.yml'
       profile: dev  #environment name, 'dev'  'config-dev.yml'
       #don't forget to add http here. Otherwise it won't load.
       uri: http://localhost:3344 #address of Spring Cloud Config server end
+  ##### RabbitMQ related configuration, 15672 is the port of the web management interface, 5672 is the access port of MQ###########
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -19,7 +20,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #将服务注册到 Eureka 集群
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 # Spring Boot 2.50 screens most of the nodes for actuator monitoring, and only exposes the health node. The configuration (*) in this section is to enable all nodes
 management:
   endpoints:

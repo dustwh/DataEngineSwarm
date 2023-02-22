@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
-public class MicroServiceCloudConfigClient3355Application {
+public class MicroServiceCloudConfigClientBus3366Application {
     public static void main(String[] args) {
-        SpringApplication.run(MicroServiceCloudConfigClient3355Application.class, args);
+        SpringApplication.run(MicroServiceCloudConfigClientBus3366Application.class, args);
     }
 }

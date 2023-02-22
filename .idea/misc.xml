@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/micro-service-cloud-gateway-9527/pom.xml" />
         <option value="$PROJECT_DIR$/micro-service-cloud-config-center-3344/pom.xml" />
         <option value="$PROJECT_DIR$/micro-service-cloud-config-client-3355/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-service-cloud-config-client-bus-3366/pom.xml" />
       </list>
     </option>
   </component>
