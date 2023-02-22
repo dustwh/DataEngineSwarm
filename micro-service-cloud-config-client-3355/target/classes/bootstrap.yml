@@ -15,3 +15,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #将服务注册到 Eureka 集群
+# Spring Boot 2.50 screens most of the nodes for actuator monitoring, and only exposes the health node. The configuration (*) in this section is to enable all nodes
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # * is a keyword in the yaml file, so quotation marks are required
