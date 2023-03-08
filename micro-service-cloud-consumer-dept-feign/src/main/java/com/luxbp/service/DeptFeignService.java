@@ -1,9 +1,11 @@
 package com.luxbp.service;
 
 import com.luxbp.entity.Dept;
+import com.luxbp.entity.Student;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
@@ -20,5 +22,8 @@ public interface DeptFeignService {
 
     @RequestMapping(value = "/dept/feign/timeout")
     public String DeptFeignTimeout();
+
+    @RequestMapping(value = "/student/add", method = RequestMethod.POST)
+    public int addStudent(@RequestBody Student student);
 }
 
