@@ -22,6 +22,12 @@ spring:
             - Path=/get/**
           filters:
             - PrefixPath=/dept #在请求路径上增加一个前缀 /dept
+        - id: consumer_dept_feign_add_student
+          uri: lb://MICROSERVICECLOUDCONSUMERDEPTFEIGN
+          predicates:
+            - Path=/student/add
+          filters:
+            - PrefixPath=/consumer
 eureka:
   instance:
     instance-id: micro-service-cloud-gateway-9527

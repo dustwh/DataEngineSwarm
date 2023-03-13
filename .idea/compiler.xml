@@ -13,6 +13,7 @@
         <module name="micro-service-cloud-eureka-7002" />
         <module name="micro-service-cloud-provider-dept-8002" />
         <module name="micro-service-cloud-config-client-bus-3366" />
+        <module name="axis-server" />
         <module name="micro-service-cloud-config-center-3344" />
         <module name="micro-service-cloud-consumer-dept-feign" />
         <module name="micro-service-cloud-gateway-9527" />
@@ -23,6 +24,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="axis-server (2)" target="1.8" />
       <module name="micro-service-cloud-consumer-dept-80" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8001 (1)" target="1.8" />
       <module name="micro-service-cloud-provider-dept-8001 (2)" target="1.8" />
@@ -30,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="axis-server" options="-parameters" />
       <module name="micro-service-cloud-api" options="-parameters" />
       <module name="micro-service-cloud-config-center-3344" options="-parameters" />
       <module name="micro-service-cloud-config-client-3355" options="-parameters" />
