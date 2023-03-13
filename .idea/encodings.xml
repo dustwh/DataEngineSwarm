@@ -30,6 +30,8 @@
     <file url="file://$PROJECT_DIR$/micro-service-cloud-provider-dept-hystrix-8004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netsuite-webservice-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netsuite-webservice-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nsws-provider2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nsws-provider2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
