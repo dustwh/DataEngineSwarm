@@ -1,7 +1,0 @@
-server:
-  port: 8089
-spring:
-  application:
-    name: axisServer
-  main:
-    banner-mode: off
