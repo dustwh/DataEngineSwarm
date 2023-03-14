@@ -21,6 +21,7 @@
         <module>micro-service-cloud-config-client-3355</module>
         <module>micro-service-cloud-config-client-bus-3366</module>
         <module>axis-server</module>
+        <module>micro-service-cloud-netsuite-provider-8011</module>
     </modules>
 
     <parent>
