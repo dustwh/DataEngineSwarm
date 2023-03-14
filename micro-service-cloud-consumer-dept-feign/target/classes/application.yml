@@ -1,0 +1,35 @@
+server:
+  port: 80
+spring:
+  application:
+    name: microServiceCloudConsumerDeptFeign
+eureka:
+  client:
+    register-with-eureka: true # get registered
+    fetch-registry: true  # fetch service
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+ribbon:
+  ReadTimeout: 6000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
+  ConnectionTimeout: 6000 #建立连接后，服务器读取到可用资源的时间
+logging:
+  level:
+    #feign 日志以什么样的级别监控该接口
+    com.luxbp.service.DeptFeignService: debug
+feign:
+  hystrix:
+    enabled: true #开启客户端 hystrix
+######################配置请求超时时间##########################
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 7000
+    ####################配置具体方法超时时间 为 3 秒########################
+    DeptHystrixService#deptInfo_Timeout(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
