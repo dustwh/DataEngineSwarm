@@ -1,0 +1,25 @@
+server:
+  port: 8001 #Service port number
+spring:
+  application:
+    name: microServiceCloudNetsuiteProvider  #The name of the microservice, the name of the microservice exposed to the outside world, is very important
+########################################### Spring cloud custom service name and ip address###############################################
+eureka:
+  client: #Register the client into the eureka service list
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: spring-cloud-provider-8001 #Custom service name information
+    prefer-ip-address: true  #Display the ip address of the access path
+########################################## Spring cloud uses Spring Boot actuator to monitor and improve information###################################
+# Spring Boot 2.50 shields most of the nodes for actuator monitoring, and only exposes the heath node. The configuration (*) in this section is to enable all nodes
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # * is a keyword in the yaml file, so quotation marks are required
+info:
+  app.name: micro-service-cloud-provider-dept
+  company.name: luxbp.com
+  build.aetifactId: @project.artifactId@
+  build.version: @project.version@
