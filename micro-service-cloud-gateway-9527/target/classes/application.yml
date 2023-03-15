@@ -22,6 +22,10 @@ spring:
             - Path=/get/**
           filters:
             - PrefixPath=/dept #在请求路径上增加一个前缀 /dept
+        - id: consumer_dept_feign_list_routh
+          uri: lb://MICROSERVICECLOUDCONSUMERDEPTFEIGN
+          predicates:
+            - Path=/consumer/dept/list
         - id: consumer_dept_feign_add_student
           uri: lb://MICROSERVICECLOUDCONSUMERDEPTFEIGN
           predicates:
