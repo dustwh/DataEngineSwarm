@@ -7,9 +7,8 @@ spring:
   datasource:
     username: root
     password: root
-    #    url: jdbc:mysql://127.0.0.1:3306/spring_cloud_db2       #database url / 数据库url
-    url: jdbc:mysql://127.0.0.1:3306/luxbp_demo_jdbc       #database url / 数据库url
-    driver-class-name: com.mysql.jdbc.Driver                  #database driver / 数据库驱动
+    url: jdbc:mysql://127.0.0.1:3306/spring_cloud_db3       #database url
+    driver-class-name: com.mysql.jdbc.Driver                  #database driver
 ############################### do not check spring.config.import=configserver: / 不检查 spring.config.import=configserver:##################
 #  cloud:
 #    config:
