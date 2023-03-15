@@ -27,6 +27,8 @@ eureka:
   client: #register client to eureka list
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #register into cluster
+  instance:
+    instance-id: config-center-3344 #Custom service name information
 management:
   endpoints:
     web:
