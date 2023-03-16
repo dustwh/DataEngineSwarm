@@ -13,7 +13,7 @@ public class StudentController_Consumer {
     @Resource
     private DeptFeignService deptFeignService;
 
-    @RequestMapping(value = "/consumer/student/add")
+    @RequestMapping(value = "/f/student/add")
     public int addStudent(@RequestBody Student student) {
         return deptFeignService.addStudent(student);
     }

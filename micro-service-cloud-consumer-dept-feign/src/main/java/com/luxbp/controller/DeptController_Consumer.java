@@ -12,12 +12,13 @@ public class DeptController_Consumer {
 
     @Resource
     private DeptFeignService deptFeignService;
-    @RequestMapping(value = "/consumer/dept/get/{id}")
+    @RequestMapping(value = "/f/dept/get/{id}")
     public Dept get(@PathVariable("id") Integer id) {
         return deptFeignService.get(id);
     }
-    @RequestMapping(value = "/consumer/dept/list")
+    @RequestMapping(value = "/f/dept/list")
     public List<Dept> list() {
+        System.out.println("in------->");
         return deptFeignService.list();
     }
 
