@@ -1,8 +1,0 @@
-server:
-  port: 9002  #端口号
-#http://eureka7001.com:9002/hystrix   monitor page
-# localhost:8004//actuator/hystrix.stream   monitor address
-hystrix:
-  dashboard:
-    proxy-stream-allow-list:
-      - "localhost"
