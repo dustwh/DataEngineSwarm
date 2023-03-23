@@ -3,7 +3,7 @@ package com.luxbp.controller;
 import com.luxbp.netsuite.application.AccountDetails;
 import com.luxbp.netsuite.application.NetsuiteServiceManager;
 import com.luxbp.netsuite.application.TestPortSingleton;
-import com.netsuite.webservices.lists.relationships_2022_2.CustomerSearchAdvanced;
+//import com.netsuite.webservices.lists.relationships_2022_2.CustomerSearchAdvanced;
 import com.netsuite.webservices.platform.core_2022_2.SearchResult;
 import com.netsuite.webservices.platform.faults_2022_2.*;
 import com.netsuite.webservices.platform_2022_2.NetSuitePortType;
@@ -30,7 +30,7 @@ public class NetSuiteController {
     private String serverPort;
 
     @RequestMapping(value = "/port", method = RequestMethod.GET)
-    public String getTestResult(@PathVariable("id") int id) {
+    public String getTestResult() {
         String ret = "";
         TestPortSingleton instance = new TestPortSingleton();
         try {
