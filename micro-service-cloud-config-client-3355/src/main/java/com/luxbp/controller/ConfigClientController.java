@@ -15,8 +15,42 @@ public class ConfigClientController {
     private String configInfo;
     @Value("${config.version}")
     private String configVersion;
-    @GetMapping(value = "/getConfig")
-    public String getConfig() {
+    @Value("${netsuite.accountId}")
+    private String accountId;
+    @Value("${netsuite.consumerKey}")
+    private String consumerKey;
+    @Value("${netsuite.consumerSecret}")
+    private String consumerSecret;
+    @Value("${netsuite.netsuiteToken}")
+    private String netsuiteToken;
+    @Value("${netsuite.netsuiteSecret}")
+    private String netsuiteSecret;
+    @GetMapping(value = "/getTestConfig")
+    public String getTestConfig() {
         return "info：" + configInfo + "<br/>version：" + configVersion + "<br/>port：" + serverPort;
+    }
+    @GetMapping(value = "/getAccountId")
+    public String getAccountId() {
+        return accountId;
+    }
+
+    @GetMapping(value = "/getConsumerKey")
+    public String getConsumerKey() {
+        return consumerKey;
+    }
+
+    @GetMapping(value = "/getConsumerSecret")
+    public String getConsumerSecret() {
+        return consumerSecret;
+    }
+
+    @GetMapping(value = "/getNetsuiteToken")
+    public String getNetsuiteToken() {
+        return netsuiteToken;
+    }
+
+    @GetMapping(value = "/getNetsuiteSecret")
+    public String getNetsuiteSecret() {
+        return netsuiteSecret;
     }
 }

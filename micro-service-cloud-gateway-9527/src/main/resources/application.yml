@@ -36,6 +36,11 @@ spring:
           predicates:
             - Path=/f/student/add
             - Method=POST
+        - id: provider_netsuite_get_search
+          uri: lb://MICROSERVICECLOUDNETSUITEPROVIDER
+          predicates:
+            - Path=/port
+            - Method=GET
 eureka:
   instance:
     instance-id: micro-service-cloud-gateway-9527

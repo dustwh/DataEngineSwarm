@@ -12,17 +12,17 @@ spring:
           search-paths:
             - springcloud-config
           force-pull: true
-          # if Gitrepo is piblic，then no need for username and password, othervice,username and password is needed.
-          # username: ********
-          # password: ********
+          # if Gitrepo is public，then no need for username and password, othervice,username and password is needed.
+          username: dustwh
+          password: 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
       #branch name
       label: main
   ##### RabbitMQ related configuration, 15672 is the port of the web management interface, 5672 is the access port of MQ###########
   rabbitmq:
     host: 127.0.0.1
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
 eureka:
   client: #register client to eureka list
     service-url:

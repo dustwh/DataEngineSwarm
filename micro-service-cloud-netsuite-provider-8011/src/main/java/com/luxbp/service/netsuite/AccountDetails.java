@@ -1,4 +1,4 @@
-package com.luxbp.netsuite.application;
+package com.luxbp.service.netsuite;
 
 import lombok.Getter;
 import lombok.Setter;

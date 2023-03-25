@@ -1,4 +1,4 @@
-package com.luxbp.netsuite.application;
+package com.luxbp.service.netsuite;
 
 import com.netsuite.webservices.platform.core_2022_2.DataCenterUrls;
 import com.netsuite.webservices.platform.core_2022_2.TokenPassport;
