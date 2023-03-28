@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Service Provider Control Layer / 服务提供者的控制层
- * author:
- */
 @RestController
 @Slf4j
 public class DeptController {

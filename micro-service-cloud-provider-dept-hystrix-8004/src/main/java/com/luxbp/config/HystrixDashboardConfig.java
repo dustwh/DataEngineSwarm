@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class HystrixDashboardConfig {
     /**
-     *  Hystrix dashboard 监控界面必须配置
+     *  Hystrix dashboard monitoring interface must be configured
      * @return
      */
     @Bean
@@ -15,7 +15,7 @@ public class HystrixDashboardConfig {
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
         ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
         registrationBean.setLoadOnStartup(1);
-        registrationBean.addUrlMappings("/actuator/hystrix.stream");//访问路径
+        registrationBean.addUrlMappings("/actuator/hystrix.stream");//access path
         registrationBean.setName("hystrix.stream");
         return registrationBean;
     }

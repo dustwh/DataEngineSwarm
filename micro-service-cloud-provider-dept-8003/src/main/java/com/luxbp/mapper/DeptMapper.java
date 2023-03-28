@@ -7,9 +7,9 @@ import java.util.List;
 
 @Mapper
 public interface DeptMapper {
-    //Get data by primary key / 根据主键获取数据
+    //Get data by primary key
 
     Dept selectByPrimaryKey(Integer deptNo);
-    //Get all the data in the table / 获取表中的全部数据
+    //Get all the data in the table
     List<Dept> GetAll();
 }

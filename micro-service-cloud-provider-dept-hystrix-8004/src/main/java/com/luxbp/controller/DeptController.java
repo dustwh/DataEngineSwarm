@@ -18,7 +18,7 @@ public class DeptController {
         log.info("port：" + serverPort + " result:" + result);
         return result + "，   port：" + serverPort;
     }
-    // Hystrix 服务超时降级
+    // Hystrix time out
     @RequestMapping(value = "/dept/hystrix/timeout/{id}")
     public String deptInfo_Timeout(@PathVariable("id") Integer id) {
         String result = deptService.deptInfo_Timeout(id);
@@ -26,7 +26,7 @@ public class DeptController {
         return result + "，   port：" + serverPort;
     }
 
-    // Hystrix 服务熔断
+    // Hystrix server side breaker
     @RequestMapping(value = "/dept/hystrix/circuit/{id}")
     public String deptCircuitBreaker(@PathVariable("id") Integer id){
         String result = deptService.deptCircuitBreaker(id);

@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigBean {
     /**
-     * OpenFeign 日志增强
-     * 配置 OpenFeign 记录哪些内容
+     * OpenFeign log enhancement
+     * Configure what OpenFeign logs
      */
     @Bean
     Logger.Level feginLoggerLevel() {

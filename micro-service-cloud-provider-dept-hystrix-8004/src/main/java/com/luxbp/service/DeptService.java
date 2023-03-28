@@ -1,11 +1,11 @@
 package com.luxbp.service;
 
 public interface DeptService {
-    // hystrix 熔断器示例 ok
+    // hystrix normal case
     public String deptInfo_Ok(Integer id);
-    //hystrix 熔断器超时案例
+    //hystrix time out case
     public String deptInfo_Timeout(Integer id);
 
-    // Hystrix 熔断机制案例
+    // Hystrix Circuit Breaker
     public String deptCircuitBreaker(Integer id);
 }

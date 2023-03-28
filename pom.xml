@@ -48,9 +48,11 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--在主工程中使用 dependencyManagement 声明 Spring Cloud 的版本，
-            这样工程内的 Module 中引入 Spring Cloud 组件依赖时，就不必在声明组件的版本信息
-            保证 Spring Cloud 各个组件一致性-->
+            <!--Use dependencyManagement to
+             declare the version of Spring Cloud in the main project,
+             so that when Spring Cloud component dependencies are introduced
+             into the Module in the project, it is not necessary to declare the
+             version information of the dependencies to ensure the consistency-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

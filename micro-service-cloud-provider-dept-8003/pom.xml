@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <!--Import the parent project pom / 引入父工程pom-->
+    <!--Import the parent project pom-->
     <parent>
         <groupId>com.luxbp</groupId>
         <artifactId>DataEngineSwarm</artifactId>
@@ -22,60 +22,60 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--devtools development tools / devtools 开发工具-->
+        <!--devtools development tools-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <!--Spring Boot test / Spring Boot 测试-->
+        <!--Spring Boot test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--Import public submodules / 引入公共子模块-->
+        <!--Import public submodules-->
         <dependency>
             <groupId>com.luxbp</groupId>
             <artifactId>micro-service-cloud-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--junit test / junit 测试-->
+        <!--junit test-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-        <!--mysql driver / mysql 驱动-->
+        <!--mysql driver-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.49</version>
         </dependency>
-        <!--logback log / logback 日志-->
+        <!--logback log-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
         </dependency>
-        <!--Integrate mybatis / 整合 mybatis -->
+        <!--Integrate mybatis -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.2.0</version>
         </dependency>
-        <!-- Effective immediately after modification, hot deployment / 修改后立即生效，热部署 -->
+        <!-- Effective immediately after modification, hot deployment -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>springloaded</artifactId>
             <version>1.2.8.RELEASE</version>
         </dependency>
-        <!--Introduce the dependency of Eureka Client and register the service with Eureka Server / 引入 Eureka Client 的依赖，将服务注册到 Eureka Server-->
+        <!--Introduce the dependency of Eureka Client and register the service with Eureka Server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!-- Spring Boot monitoring module / Spring Boot 监控模块-->
+        <!-- Spring Boot monitoring module-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -83,7 +83,7 @@
     </dependencies>
     <build>
         <plugins>
-            <!--Mybatis automatically generates code plugin / mybatis自动生成代码插件-->
+            <!--Mybatis automatically generates code plugin-->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -91,11 +91,11 @@
                 <configuration>
                     <configurationFile>src/main/resources/mybatis-generator/generatorConfig.xml</configurationFile>
                     <verbose>true</verbose>
-                    <!-- Whether to overwrite, true means that the generated JAVA file will be replaced, false is not overwritten / 是否覆盖，true表示会替换生成的JAVA文件，false则不覆盖 -->
+                    <!-- Whether to overwrite, true means that the generated JAVA file will be replaced, false is not overwritten -->
                     <overwrite>true</overwrite>
                 </configuration>
                 <dependencies>
-                    <!--mysql driver package / mysql驱动包-->
+                    <!--mysql driver package-->
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>

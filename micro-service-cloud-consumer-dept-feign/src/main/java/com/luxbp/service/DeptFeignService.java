@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
-//添加为容器内的一个组件
+
 @Component
-// 服务提供者提供的服务名称，即 application.name
+// The value is set to the service name, ie application.name in configuration file (application.yml or bootstrap.yml)
 @FeignClient(value = "MICROSERVICECLOUDPROVIDERDEPT")
 public interface DeptFeignService {
-    //对应服务提供者（8001、8002、8003）Controller 中定义的方法
+    //Corresponding to the method defined in the service provider (8001, 8002, 8003) Controller
     @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
     public Dept get(@PathVariable("id") int id);
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
@@ -26,4 +26,3 @@ public interface DeptFeignService {
     @RequestMapping(value = "/student/add", method = RequestMethod.POST)
     public int addStudent(@RequestBody Student student);
 }
-

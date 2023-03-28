@@ -24,7 +24,7 @@ public class DeptController_Consumer {
 
     @RequestMapping(value = "/consumer/dept/feign/timeout")
     public String DeptFeignTimeout() {
-        // openFeign-ribbon 客户端一般默认等待一秒钟，超过该时间就会报错
+        // The openFeign-ribbon client generally waits for one second by default, and an error will be reported after this time
         return deptFeignService.DeptFeignTimeout();
     }
 }

@@ -1,7 +1,6 @@
 package com.luxbp.controller;
 
 import com.luxbp.service.netsuite.TestPortSingleton;
-
 //import com.netsuite.webservices.lists.relationships_2022_2.CustomerSearchAdvanced;
 import com.luxbp.service.openfeign.NetsuiteConfigFeignService;
 import lombok.extern.slf4j.Slf4j;
@@ -9,15 +8,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.annotation.Resource;
+//import static org.junit.Assert.assertTrue;
 
-import static org.junit.Assert.assertTrue;
-
-/**
- * Service Provider Control Layer / 服务提供者的控制层
- * author:
- */
 @RestController
 @Slf4j
 public class NetSuiteController {

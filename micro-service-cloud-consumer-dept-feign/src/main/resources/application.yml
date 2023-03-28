@@ -12,16 +12,16 @@ eureka:
   instance:
     instance-id: consumer-feign-80
 ribbon:
-  ReadTimeout: 6000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
-  ConnectionTimeout: 6000 #建立连接后，服务器读取到可用资源的时间
+  ReadTimeout: 6000 #The time taken to establish a connection, applicable to the time taken by both ends of the connection when the network condition is normal
+  ConnectionTimeout: 6000 #After the connection is established, the time when the server reads the available resources
 logging:
   level:
-    #feign 日志以什么样的级别监控该接口
+    #What level does the feign log monitor the interface at?
     com.luxbp.service.DeptFeignService: debug
 feign:
   hystrix:
-    enabled: true #开启客户端 hystrix
-######################配置请求超时时间##########################
+    enabled: true #Open the client hystrix
+######################Configure request timeout##########################
 hystrix:
   command:
     default:
@@ -29,7 +29,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 7000
-    ####################配置具体方法超时时间 为 3 秒########################
+    ####################Configure the specific method timeout as 3 seconds########################
     DeptHystrixService#deptInfo_Timeout(Integer):
       execution:
         isolation:

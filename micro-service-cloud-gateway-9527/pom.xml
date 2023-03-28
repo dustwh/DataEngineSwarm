@@ -25,13 +25,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--特别注意：在 gateway 网关服务中不能引入 spring-boot-starter-web 的依赖，否则会报错-->
-        <!-- Spring cloud gateway 网关依赖-->
+        <!--Special attention: the dependency of spring-boot-starter-web cannot be introduced in the gateway service, otherwise an error will be reported-->
+        <!-- Spring cloud gateway dependency-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
-        <!--Eureka 客户端-->
+        <!--Eureka client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
