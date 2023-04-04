@@ -1,5 +1,5 @@
 server:
-  port: 8001 #Service port number
+  port: 8002 #Service port number
 spring:
   application:
     name: microServiceCloudProviderDept  #The name of the microservice, the name of the microservice exposed to the outside world, is very important
