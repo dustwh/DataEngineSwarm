@@ -22,9 +22,7 @@ public class NetSuiteController {
     @RequestMapping(value = "/port", method = RequestMethod.GET)
     public String getCustomerSearchAdvanced() {
         String ret = "";
-//        TestPortSingleton instance = new TestPortSingleton();
         try {
-            //System.out.println("8011 controller");
             ret += testPortSingleton.getCustomerSearchAdvanced();
         } catch (Exception e) {
             throw new RuntimeException(e);
