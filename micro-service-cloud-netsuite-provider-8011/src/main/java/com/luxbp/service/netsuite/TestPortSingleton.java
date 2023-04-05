@@ -1,6 +1,6 @@
 package com.luxbp.service.netsuite;
 
-import com.luxbp.service.openfeign.NetsuiteConfigFeignService;
+//import com.luxbp.service.openfeign.NetsuiteConfigFeignService;
 import com.netsuite.webservices.lists.relationships_2022_2.CustomerSearchAdvanced;
 import com.netsuite.webservices.platform.core_2022_2.SearchResult;
 import com.netsuite.webservices.platform_2022_2.NetSuitePortType;
@@ -28,8 +28,8 @@ public class TestPortSingleton {
     @Value("${netsuite.netsuiteSecret}")
     private String netsuiteSecret;
 
-    @Resource
-    private NetsuiteConfigFeignService netsuiteConfigFeignService;
+//    @Resource
+//    private NetsuiteConfigFeignService netsuiteConfigFeignService;
 
     public String getCustomerSearchAdvanced() throws Exception{
         System.out.println(configInfo);
