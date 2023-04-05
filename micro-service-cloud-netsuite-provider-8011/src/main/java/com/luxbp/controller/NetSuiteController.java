@@ -25,6 +25,7 @@ public class NetSuiteController {
         String ret = "";
 //        TestPortSingleton instance = new TestPortSingleton();
         try {
+            //System.out.println("8011 controller");
             ret += testPortSingleton.getCustomerSearchAdvanced();
         } catch (Exception e) {
             throw new RuntimeException(e);

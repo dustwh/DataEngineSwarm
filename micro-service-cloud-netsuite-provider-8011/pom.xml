@@ -33,6 +33,11 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--Spring Boot test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,6 +67,10 @@
 <!--            <artifactId>springloaded</artifactId>-->
 <!--            <version>1.2.8.RELEASE</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
         <!--Introduce the dependency of Eureka Client and register the service with Eureka Server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -75,6 +84,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--Add message Bus support for RabbitMQ-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
     </dependencies>
     <build>

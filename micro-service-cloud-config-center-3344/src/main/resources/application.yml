@@ -14,7 +14,8 @@ spring:
           force-pull: true
           # if Gitrepo is public，then no need for username and password, othervice,username and password is needed.
           username: dustwh
-          password: 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
+#          password: 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
+          password: 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
       #branch name
       label: main
   ##### RabbitMQ related configuration, 15672 is the port of the web management interface, 5672 is the access port of MQ###########
