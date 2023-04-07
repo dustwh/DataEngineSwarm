@@ -29,6 +29,8 @@ public class TestPortSingleton {
 
     public String getCustomerSearchAdvanced() throws Exception{
 
+        System.out.println(configVersion);
+
         String ret = "";
         //construct account
         AccountDetails acct = new AccountDetails();

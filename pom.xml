@@ -21,6 +21,7 @@
         <module>axis-server</module>
         <module>micro-service-cloud-netsuite-provider-8011</module>
         <module>data-engine-command-line-application</module>
+        <module>data-engine-scheduled-jobs-application-8082</module>
     </modules>
 
     <parent>
